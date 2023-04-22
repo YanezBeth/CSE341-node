@@ -1,17 +1,17 @@
 const milaRoute = (req, res) => {
-    res.send('Mila Yanez');
+    res.send('Camila Elisabeth Yanez');
 };
 
 const elianaRoute = (req, res) => {
-    res.send('Eliana Yanez');
+    res.send('Eliana Cathleen Yanez');
 };
 
 const ciaraRoute = (req, res) => {
-    res.send('Ciara Yanez');
+    res.send('Ciara Evelyn Yanez');
 };
 
 const emmaRoute = (req, res) => {
-    res.send('Emma Yanez');
+    res.send('Emma Caroline Yanez');
 };
 
 
