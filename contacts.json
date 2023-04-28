@@ -1,0 +1,51 @@
+{
+    
+        "contact0": {
+            "$oid": "6449dbcbc22777bd135572f4",        
+        "firstName": "Beth",
+        "lastName": "Yanez",
+        "email": "bethyz@byui.edu",
+        "favoriteColor": "green",
+        "birthday": "03/11/1985"
+    }, 
+        "contact1": {
+            "$oid": "6449dc24c22777bd135572f5",        
+        "firstName": "Nelson",
+        "lastName": "Yanez Galvez",
+        "email": "nelsonryanez@hotmail.com",
+        "favoriteColor": "orange",
+        "birthday": "03/15/1983"
+    }, 
+        "contact2": {
+            "$oid": "6449dc6cc22777bd135572f6",
+        "firstName": "Camila",
+        "lastName": "Yanez",
+        "email": "milabird@gmail.com",
+        "favoriteColor": "grey",
+        "birthday": "04/21/2011"
+    }, 
+        "contact3": {
+            "$oid": "6449dce1c22777bd135572f7",
+        "firstName": "Eliana",
+        "lastName": "Yanez",
+        "email": "anabanana@gmail.com",
+        "favoriteColor": "black",
+        "birthday": "10/03/2012"
+    },
+        "contact4": {
+            "$oid": "6449dd2dc22777bd135572f8",
+        "firstName": "Ciara",
+        "lastName": "Yanez",
+        "email": "ciaracat@gmail.com",
+        "favoriteColor": "lilac",
+        "birthday": "01/06/2014"
+    }, 
+        "contact5": {
+            "$oid": "6449dd6ec22777bd135572f9",
+        "firstName": "Emma",
+        "lastName": "Yanez",
+        "email": "emmy@gmail.com",
+        "favoriteColor": "green",
+        "birthday": "05/30/2016"
+    }
+}
