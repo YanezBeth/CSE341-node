@@ -12,6 +12,11 @@ const getAll = async (req, res, next) => {
   });
 };
 
+/*const getAll = async (req, res, next) => {
+  res.send('Hello world!'); // send a simple message as the response
+};*/
+
+
 /*async function getAll(req, res, next) {
   try {
     const contacts = await mongodb.getDb().db().collection('contacts').find().toArray();
