@@ -29,7 +29,9 @@ const getSingle = async (req, res, next) => {
     .getDb()
     .db()
     .collection('contacts')
-    .find({ _id: userId });
+    .find({
+      _id: userId
+    });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists[0]);
@@ -52,4 +54,7 @@ const getSingle = async (req, res, next) => {
 }*/
 
 
-module.exports = { getAll, getSingle };
+module.exports = {
+  getAll,
+  getSingle
+};
