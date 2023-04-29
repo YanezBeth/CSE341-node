@@ -93,8 +93,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependecies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.16.3",
+    "mongodb": "^4.4.0"
+  },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^1.18.4"
   },
   "engines": {
     "node": ">=14 <15"

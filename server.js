@@ -1,9 +1,27 @@
+// CODE IS NOT MINE. Used Brother Birch's code as a reference to help me understand how to use MongoDB with Node.js
+// https://github.com/byui-cse/cse341-code-student/blob/L02-personal-solution/app.js
+
 const express = require('express');
+const bodyParser = require('body-parser');
+const mongodb = require('./db/connect');
+//const routes = require('./routes');
+const port = process.env.PORT || 8080;
 const app = express();
 
-const port = 8080;
+app
+  .use(bodyParser.json())
+  .use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+  })
+  //.use('/', routes);
+  .use('/', require('./routes'));
 
-app.use('/', require('./routes'));
-
-app.listen(process.env.port || port);
-console.log('Web server is listening at port ' + (process.env.port || port));
+mongodb.initDb((err, mongodb) => {
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(port);
+    console.log(`Connected to DB and listening on ${port}`);
+  }
+});

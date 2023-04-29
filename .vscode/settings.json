@@ -1,0 +1,4 @@
+{
+    "mdb.defaultLimit": 50,
+    "mdb.connectionSaving.hideOptionToChooseWhereToSaveNewConnections": true
+}
