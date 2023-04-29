@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "644d4eb01ab0bcb90a9538ff"
+  },
+  "firstName": "Beth",
+  "lastName": "Heighton",
+  "email": "bethyz@byui.edu",
+  "favoriteColor": "green",
+  "birthday": "03/11/1985"
+},{
+  "_id": {
+    "$oid": "644d4f061ab0bcb90a953900"
+  },
+  "firstName": "Nelson",
+  "lastName": "Yanez",
+  "email": "nelson@hotmail.com",
+  "favoriteColor": "orange",
+  "birthday": "03/15/1983"
+},{
+  "_id": {
+    "$oid": "644d4f641ab0bcb90a953901"
+  },
+  "firstName": "Camila",
+  "lastName": "Yanez",
+  "email": "mila@gmail.com",
+  "favoriteColor": "red",
+  "birthday": "04/21/2011"
+},{
+  "_id": {
+    "$oid": "644d4f9a1ab0bcb90a953902"
+  },
+  "firstName": "Eliana",
+  "lastName": "Yanez",
+  "email": "banana@hotmail.com",
+  "favoriteColor": "black",
+  "birthday": "10/03/2012"
+},{
+  "_id": {
+    "$oid": "644d4fce1ab0bcb90a953903"
+  },
+  "firstName": "Ciara",
+  "lastName": "Yanez",
+  "email": "ciaracat@gmail.com",
+  "favoriteColor": "purple",
+  "birthday": "01/06/2016"
+},{
+  "_id": {
+    "$oid": "644d50001ab0bcb90a953904"
+  },
+  "firstName": "Emma",
+  "lastName": "Yanez",
+  "email": "emmy@gmail.com",
+  "favoriteColor": "green",
+  "birthday": "05/30/2016"
+}]

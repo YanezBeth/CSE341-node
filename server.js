@@ -2,6 +2,7 @@
 // https://github.com/byui-cse/cse341-code-student/blob/L02-personal-solution/app.js
 
 const express = require('express');
+const MongoClient = require('mongodb').MongoClient;
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 //const routes = require('./routes');
