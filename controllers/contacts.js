@@ -4,15 +4,15 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
-/*const getAll = async (req, res, next) => {
-  const result = await mongodb.getDb().db().collection('CSE340.contacts').find();
+const getAll = async (req, res, next) => {
+  const result = await mongodb.getDb().db().collection('contacts').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
   });
-};*/
+};
 
-async function getAll(req, res, next) {
+/*async function getAll(req, res, next) {
   try {
     const contacts = await mongodb.getDb().db().collection('contacts').find().toArray();
     res.status(200).json(contacts);
@@ -20,10 +20,10 @@ async function getAll(req, res, next) {
     console.log(error);
     res.status(500).send(error);
   }
-}
+}*/
 
 
-/*const getSingle = async (req, res, next) => {
+const getSingle = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
@@ -34,9 +34,9 @@ async function getAll(req, res, next) {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists[0]);
   });
-};*/
+};
 
-async function getSingle(req, res, next) {
+/*async function getSingle(req, res, next) {
   try {
     const userId = new ObjectId(req.params.id);
     const contact = await mongodb.getDb().db().collection('contacts').findOne({ _id: userId });
@@ -49,7 +49,7 @@ async function getSingle(req, res, next) {
     console.log(error);
     res.status(500).send(error);
   }
-}
+}*/
 
 
 module.exports = { getAll, getSingle };
