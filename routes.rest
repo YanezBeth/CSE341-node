@@ -1,0 +1,18 @@
+### Get total contacts 
+GET http://localhost:8080/contacts
+
+### Get one contact by ID 
+GET http://localhost:8080/contacts/644d4eb01ab0bcb90a9538ff
+
+### Create a new contact 
+POST http://localhost:8080/contacts HTTP/1.1content-type: application/json
+
+{
+  "firstName": "Lola",
+  "lastName": "Yanez",
+  "email": "lolalamby@hotmail.com",
+  "favoriteColor": "white",
+  "birthday": "11/11/2016"
+}
+
+###

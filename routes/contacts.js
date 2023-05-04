@@ -13,4 +13,10 @@ router.get('/', contactsController.getAll);
 
 router.get('/:id', contactsController.getSingle);
 
+//POST and PUT use json body
+//Create a contact by using a POST route and return the new ID
+router.post('/', contactsController.createCon);
+
+
+
 module.exports = router;
