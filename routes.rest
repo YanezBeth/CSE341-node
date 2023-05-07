@@ -1,18 +1,60 @@
 ### Get total contacts 
 GET http://localhost:8080/contacts
 
-### Get one contact by ID 
+
+### Get one contact by ID (BETH)
 GET http://localhost:8080/contacts/644d4eb01ab0bcb90a9538ff
 
+### Get one contact by ID (NELSON)
+GET http://localhost:8080/contacts/644d4f061ab0bcb90a953900
+
+### Get one contact by ID (MILA)
+GET http://localhost:8080/contacts/644d4f641ab0bcb90a953901
+
+### Get one contact by ID (ELIANA)
+GET http://localhost:8080/contacts/644d4f9a1ab0bcb90a953902
+
+### Get one contact by ID (CIARA)
+GET http://localhost:8080/contacts/644d4fce1ab0bcb90a953903
+
+### Get one contact by ID (EMMA)
+GET http://localhost:8080/contacts/644d50001ab0bcb90a953904
+
+### Get one contact by ID (LOLA)
+GET http://localhost:8080/contacts/64569639fe3cbcdfae867160
+
+### Get one contact by ID (TIGG)
+GET http://localhost:8080/contacts/6456fec5a9d003418b3481ef
+
+
 ### Create a new contact 
-POST http://localhost:8080/contacts HTTP/1.1content-type: application/json
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Tigg",
+  "lastName": "Heighton",
+  "email": "tigger@hotmail.com",
+  "favoriteColor": "teal",
+  "birthday": "03/29/1978"
+}
+
+
+### Update a contact
+PUT http://localhost:8080/contacts/64569639fe3cbcdfae867160 HTTP/1.1
+Content-Type: application/json
 
 {
   "firstName": "Lola",
   "lastName": "Yanez",
-  "email": "lolalamby@hotmail.com",
-  "favoriteColor": "white",
+  "email": "lamby@gmail.com",
+  "favoriteColor": "orange",
   "birthday": "11/11/2016"
 }
 
-###
+
+### Delete a contact
+DELETE http://localhost:8080/contacts/6456ba3482215a26364aafe8  HTTP/1.1
+Content-Type: application/json
+
+### 

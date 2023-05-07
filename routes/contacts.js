@@ -17,6 +17,10 @@ router.get('/:id', contactsController.getSingle);
 //Create a contact by using a POST route and return the new ID
 router.post('/', contactsController.createCon);
 
+//Update a contact by using a PUT route
+router.put('/:id', contactsController.updateCon);
 
+//Delete a contact by using a DELETE route
+router.delete('/:id', contactsController.deleteCon);
 
 module.exports = router;
