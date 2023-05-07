@@ -32,11 +32,11 @@ POST http://localhost:8080/contacts HTTP/1.1
 Content-Type: application/json
 
 {
-  "firstName": "Tigg",
+  "firstName": "Alex",
   "lastName": "Heighton",
-  "email": "tigger@hotmail.com",
-  "favoriteColor": "teal",
-  "birthday": "03/29/1978"
+  "email": "alex@gmail.com",
+  "favoriteColor": "forrest green",
+  "birthday": "10/21/1989"
 }
 
 
@@ -48,13 +48,13 @@ Content-Type: application/json
   "firstName": "Lola",
   "lastName": "Yanez",
   "email": "lamby@gmail.com",
-  "favoriteColor": "orange",
+  "favoriteColor": "magenta",
   "birthday": "11/11/2016"
 }
 
 
 ### Delete a contact
-DELETE http://localhost:8080/contacts/6456ba3482215a26364aafe8  HTTP/1.1
+DELETE http://localhost:8080/contacts/645700f6264d37dd03b2e900  HTTP/1.1
 Content-Type: application/json
 
 ### 
