@@ -55,6 +55,8 @@ Create a PUT route for updating a contact that returns a 204 status
 const updateCon = async (req, res) => {
   try {
     const ConID = new ObjectId(req.params.id);
+    //console.log(req);
+    //console.log('Attempting to read req.body: ', req.body);
     const updateContact = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
