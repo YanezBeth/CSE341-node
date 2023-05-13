@@ -8,8 +8,10 @@ const doc = {
     title: 'My API',
     description: 'Description',
   },
-  host: 'localhost:8080',
-  schemes: ['http'],
+  //host: 'localhost:8080',
+  //schemes: ['http'],
+  host: 'https://yanezcse341.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
