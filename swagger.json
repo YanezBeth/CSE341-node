@@ -5,7 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "https://yanezcse341.onrender.com",
+  "host": "yanezcse341.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
