@@ -10,7 +10,7 @@ const doc = {
   },
   //host: 'localhost:8080',
   //schemes: ['http'],
-  host: 'https://yanezcse341.onrender.com',
+  host: 'yanezcse341.onrender.com',
   schemes: ['https'],
 };
 
