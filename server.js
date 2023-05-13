@@ -8,9 +8,18 @@ const mongodb = require('./db/connect');
 //const routes = require('./routes');
 const port = process.env.PORT || 8080;
 const app = express();
+const cors = require('cors');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+
+
 
 app
+  .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument)) //must be first 
+  .use(cors())
   .use(bodyParser.json())
+  .use(express.json())
+  .use(express.urlencoded({ extended: true }))
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
